@@ -25,7 +25,7 @@ SECRET_KEY = 'o*080cw^wdl*ekz*a+1=yy%!cyr-fd!go_0^ziq8+j0(c3w0we'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'ask.urls'
-"""
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -67,7 +67,7 @@ TEMPLATES = [
         },
     },
 ]
-"""
+
 
 WSGI_APPLICATION = 'ask.wsgi.application'
 
