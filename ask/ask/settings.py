@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'ask.urls'
-
+"""
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -67,6 +67,7 @@ TEMPLATES = [
         },
     },
 ]
+"""
 
 WSGI_APPLICATION = 'ask.wsgi.application'
 
