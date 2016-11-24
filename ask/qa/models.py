@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+"""
 Class QuestionManager(models.Manager):
 	def new(self):
 		return self.objects.all()[:10]
@@ -27,3 +28,4 @@ Class Answer(models.Model):
 	author = models.ForeignKey(User)
 	Class Meta:
 		ordering = ['-added_at']
+"""		
