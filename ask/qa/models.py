@@ -2,14 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-
+"""
 Class QuestionManager(models.Manager):
 	def new(self):
-		return self.objects.all()[:10]
+		return self.objects.all()
 
 	def popular(self):
 		return self.objects.order_by('rating').all()
-		
+"""		
 Class Question(models.Model):
 	title = models.CharField()
 	text = models.TextField()
@@ -27,5 +27,4 @@ Class Answer(models.Model):
 	question = models.OneToOneField(Question)
 	author = models.ForeignKey(User)
 	Class Meta:
-		ordering = ['-added_at']
-"""		
+		ordering = ['-added_at']		
