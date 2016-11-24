@@ -18,7 +18,7 @@ class Question(models.Model):
 	author = models.ForeignKey(User)
 	likes = models.ManyToManyField(User,related_name='question_like_user')
 	objects = QuestionManager()
-	Class Meta:
+	class Meta:
 		ordering = ['-added_at']
 
 class Answer(models.Model):
