@@ -17,7 +17,7 @@ Class Question(models.Model):
 	rating = models.IntegerField()
 	author = models.ForeignKey(User)
 	likes = models.ManyToManyField(User,related_name='question_like_user')
-	objects = QuestionManager()
+#	objects = QuestionManager()
 	Class Meta:
 		ordering = ['-added_at']
 
