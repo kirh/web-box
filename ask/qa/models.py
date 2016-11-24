@@ -10,13 +10,13 @@ Class QuestionManager(models.Manager):
 		return self.objects.order_by('rating').all()
 		
 Class Question(models.Model):
-	title = models.CharField(max_length=255)
+	title = models.CharField()
 	text = models.TextField()
 	added_at = models.DateTimeField()
-	rating = models.IntegerField(default=0)
+	rating = models.IntegerField()
 	author = models.ForeignKey(User)
 	likes = models.ManyToManyField(User)
-	objects = QuestionManager
+	objects = QuestionManager()
 	Class Meta:
 		ordering = ['-added_at']
 
