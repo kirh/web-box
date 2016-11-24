@@ -26,5 +26,5 @@ class Answer(models.Model):
 	added_at = models.DateTimeField()
 	question = models.OneToOneField(Question)
 	author = models.ForeignKey(User)
-	Class Meta:
+	class Meta:
 		ordering = ['-added_at']		
