@@ -11,7 +11,7 @@ class QuestionManager(models.Manager):
 		return self.objects.order_by('rating').all()
 		
 class Question(models.Model):
-	title = models.CharField()
+	title = models.CharField(max_length=255)
 	text = models.TextField()
 	added_at = models.DateTimeField()
 	rating = models.IntegerField()
